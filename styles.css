@@ -1,0 +1,23 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-around;
+    background-color:darkgray ;
+    flex-wrap: wrap;
+    
+}
+
+.cabeçalho > a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin: 0 10px;
+}
+
+.cabeçalho img{
+    width: 50px;
+}
