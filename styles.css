@@ -32,6 +32,19 @@ body{
     color: #fff;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitulo{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
 #intro{
     margin-top: 30px;
     display: flex;
@@ -46,8 +59,11 @@ body{
 #historia{
     margin-top: 30px;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    font-size: 1.3rem;
 }
 
 
