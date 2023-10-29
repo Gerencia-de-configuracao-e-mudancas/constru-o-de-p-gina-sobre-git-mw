@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre o Git</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
         <header class="cabeçalho" id="home">
             <nav class="menu">
                 <a href="#home">Home</a>
                 <a href="#historia">História</a>
-                <a href="#">Comandos</a>
-                <a href="#">Sobre o GitHub</a>
+                <a href="#Comandos">Comandos</a>
+                <a href="#GitHub">GitHub</a>
             </nav>
             <h1>Introdução ao Git</h1>
         </header>
@@ -31,7 +35,7 @@
             </div>
 
             <div id="historia">
-                <h2>História</h2>
+                <h2 class="subtitle">História</h2>
                     <p>
                         A história do Git é uma jornada fascinante no mundo do desenvolvimento de software, marcada por inovação, colaboração e uma necessidade fundamental de gerenciar o código de maneira eficiente. Criado por Linus Torvalds, o visionário por trás do kernel do Linux, em 2005, o Git surgiu da necessidade de superar os desafios encontrados nos sistemas de controle de versão existentes. <br><br>
                     Na época, o Linux estava crescendo a passos largos, tornando-se um dos sistemas operacionais de código aberto mais proeminentes. No entanto, os sistemas de controle de versão centralizados não conseguiam lidar com a complexidade e o volume de contribuições que o Linux estava recebendo. Foi nesse cenário que Linus Torvalds decidiu criar uma ferramenta que fosse rápida, eficiente e capaz de lidar com o desenvolvimento altamente distribuído do kernel do Linux. <br> <br>
@@ -45,47 +49,71 @@
             </div>
 
             <div id="Comandos">
-                <h2>Comandos</h2>
+
+                <h2 class="subtitle" >Comandos</h2>
+
                 <p>
                     O Git é uma poderosa ferramenta de controle de versão que oferece uma variedade de comandos para ajudar os desenvolvedores a gerenciar seus projetos de software. Abaixo estão alguns dos comandos mais comuns do Git e suas descrições: <br> <br>
-
-                    git init: Inicializa um novo repositório Git em um diretório, transformando-o em um repositório Git. <br> <br>
-                    
-                    git clone [url]: Cria uma cópia local de um repositório remoto. O URL é o endereço do repositório Git que você deseja clonar. <br> <br>
-                    
-                    git add [arquivo]: Adiciona um arquivo ou uma alteração específica ao índice (staging area), preparando-o para o commit. <br> <br>
-                    
-                    git commit -m "Mensagem do commit": Registra as mudanças feitas no índice, criando um novo commit com uma mensagem descritiva das alterações. <br> <br>
-                    
-                    git status: Mostra o estado atual do seu repositório, incluindo arquivos modificados, adicionados e não rastreados. <br> <br>
-                    
-                    git push origin [branch]: Envia os commits locais para o repositório remoto na branch especificada. <br> <br>
-                    
-                    git pull origin [branch]: Atualiza seu repositório local com as alterações do repositório remoto na branch especificada. <br> <br>
-                    
-                    git branch: Lista todas as branches no repositório. O asterisco (*) indica a branch em que você está atualmente. <br> <br>
-                    
-                    git branch [nome-da-branch]: Cria uma nova branch com o nome especificado. <br> <br>
-                    
-                    git checkout [branch]: Muda para a branch especificada. Pode ser usada para criar uma nova branch ou alternar entre branches existentes. <br> <br>
-                    
-                    git merge [branch]: Mescla as alterações da branch especificada na branch atual. <br> <br>
-                    
-                    git log: Mostra o histórico de commits, exibindo informações como autor, data e mensagem de commit. <br> <br>
-                    
-                    git diff: Mostra as diferenças entre o estado atual do seu código e o último commit. <br> <br>
-                    
-                    git reset [arquivo]: Remove um arquivo específico do índice, desfazendo a preparação para o commit, mas mantendo as alterações no seu diretório de trabalho. <br> <br>
-                    
-                    git revert [hash-do-commit]: Cria um novo commit que desfaz as alterações introduzidas por um commit específico, revertendo o repositório para o estado anterior. <br> <br>
-                    
-                    Estes são apenas alguns dos comandos básicos do Git. A ferramenta possui uma variedade de outras funcionalidades poderosas para lidar com diferentes situações de desenvolvimento, como rebase, cherry-pick, e reflog, entre outros. Familiarizar-se com esses comandos é fundamental para aproveitar ao máximo o Git no desenvolvimento de software. <br> <br>    
-
                 </p>
+
+                <ul>
+                    <li>
+                       <b> git init</b> -> Inicializa um novo repositório Git em um diretório, transformando-o em um repositório Git. <br> <br>
+                    </li>
+
+                    <li>
+                        <b>git clone [url]</b> -> Cria uma cópia local de um repositório remoto. O URL é o endereço do repositório Git que você deseja clonar. <br> <br>
+                    </li>
+
+                    <li>
+                        <b>git add [arquivo]</b> -> Adiciona um arquivo ou uma alteração específica ao índice (staging area), preparando-o para o commit. <br> <br>
+                    </li>
+
+                    <li>
+                        <b>git commit -m "Mensagem do commit"</b> -> Registra as mudanças feitas no índice, criando um novo commit com uma mensagem descritiva das alterações. <br> <br>
+                    </li>
+
+                    <li>
+                        <b>git status</b> -> Mostra o estado atual do seu repositório, incluindo arquivos modificados, adicionados e não rastreados. <br> <br>
+                    </li>
+                    <li>
+                        <b>git push origin [branch]</b> -> Envia os commits locais para o repositório remoto na branch especificada. <br> <br>
+                    </li>  
+                    <li>  
+                        <b>git pull origin [branch]</b> -> Atualiza seu repositório local com as alterações do repositório remoto na branch especificada. <br> <br>
+                    </li>  
+                    <li>  
+                       <b> git branch</b> -> Lista todas as branches no repositório. O asterisco (*) indica a branch em que você está atualmente. <br> <br>
+                    </li> 
+                    <li>   
+                        <b>git branch [nome-da-branch]</b> -> Cria uma nova branch com o nome especificado. <br> <br>
+                    </li>  
+                    <li> 
+                        <b>git checkout [branch]</b> -> Muda para a branch especificada. Pode ser usada para criar uma nova branch ou alternar entre branches existentes. <br> <br>
+                    </li>     
+                    <li>
+                        <b>git merge [branch]</b> -> Mescla as alterações da branch especificada na branch atual. <br> <br>
+                    </li> 
+                    <li>  
+                        <b>git log</b> -> Mostra o histórico de commits, exibindo informações como autor, data e mensagem de commit. <br> <br>
+                    </li> 
+                    <li>   
+                        <b> git diff</b> -> Mostra as diferenças entre o estado atual do seu código e o último commit. <br> <br>
+                    </li>   
+                    <li> 
+                        <b>git reset [arquivo]</b> -> Remove um arquivo específico do índice, desfazendo a preparação para o commit, mas mantendo as alterações no seu diretório de trabalho. <br> <br>
+                    </li> 
+                    <li>   
+                        <b>git revert [hash-do-commit]</b> -> Cria um novo commit que desfaz as alterações introduzidas por um commit específico, revertendo o repositório para o estado anterior. <br> <br>
+                    </li>    
+                    <p>
+                        Estes são apenas alguns dos comandos básicos do Git. A ferramenta possui uma variedade de outras funcionalidades poderosas para lidar com diferentes situações de desenvolvimento, como rebase, cherry-pick, e reflog, entre outros. Familiarizar-se com esses comandos é fundamental para aproveitar ao máximo o Git no desenvolvimento de software. <br> <br>    
+                    </p>
+                </ul>
             </div>
 
-            <div id="GitHub">
-                <h1> Sobre o GitHub</h1>
+            <div class="topGithub" id="GitHub">
+                <h2 class="subtitle">GitHub</h2>
 
                 <p>
                     O GitHub é uma plataforma de desenvolvimento colaborativo que revolucionou a maneira como os programadores compartilham, colaboram e contribuem para projetos de software em todo o mundo. Lançado em 2008 por Chris Wanstrath, PJ Hyett e Tom Preston-Werner, o GitHub se tornou rapidamente o principal repositório online para desenvolvedores. <br> <br>
@@ -111,6 +139,10 @@
 
         </main>
 
+        <footer class="footer">
+            <p>Copyright &copy; 2023 Wenderson Dhomini e Mariane Mireli</p>
+            <p>All Right Reserved</p>
+        </footer>
         
 </body>
 </html>
